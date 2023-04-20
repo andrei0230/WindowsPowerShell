@@ -11,9 +11,7 @@ function prompt
 {
     $path = (''+$PWD).Replace($HOME,"~")
 
-    Write-Host "$user@$computer" -ForegroundColor Green -NoNewline
-    Write-Host ":" -NoNewline
-    Write-Host "[$path] " -ForegroundColor Blue -NoNewline
+    Write-Host "( $path ) " -ForegroundColor Blue -NoNewline
     Write-Host "$chevron" -ForegroundColor Yellow -NoNewline
     return " "    
 }
