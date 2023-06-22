@@ -10,7 +10,7 @@ $chevron = [char]0xf054
 function prompt 
 {
     $path = (''+$PWD).Replace($HOME,"~")
-    Write-Host "( $path ) " -ForegroundColor Blue -NoNewline
+    Write-Host "$path " -ForegroundColor Blue -NoNewline
     Write-Host "$chevron" -ForegroundColor Yellow -NoNewline
     return " "    
 }
