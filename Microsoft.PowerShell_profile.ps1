@@ -4,13 +4,13 @@
 # Custom variables
 $user = $env:USERNAME
 $computer = $env:COMPUTERNAME
-$chevron = [char]0xf054
+$chevron = [char]0xea9f
 
 # Prompt function
 function prompt 
 {
     $path = (''+$PWD).Replace($HOME,"~")
-    Write-Host "$path " -ForegroundColor Blue -NoNewline
-    Write-Host "$chevron" -ForegroundColor Yellow -NoNewline
+    Write-Host "$chevron " -ForegroundColor Green -NoNewline
+    Write-Host "$path" -ForegroundColor Blue -NoNewline
     return " "    
 }
